@@ -1,0 +1,13 @@
+################################# GUIA PARA CRIAR O MYSQL NECESSÁRIO #################################
+  
+mysql> CREATE DATABASE meus_dados;
+
+mysql> USE meus_dados;
+
+mysql> CREATE TABLE Tarefa (
+ id INT NOT NULL AUTO_INCREMENT,
+ nome VARCHAR(32) NOT NULL,
+ status INT,
+ PRIMARY KEY (ID) );
+ 
+ mysql> INSERT INTO Tarefa (nome, status) VALUES ('Projeto1-TecWeb', 1);
